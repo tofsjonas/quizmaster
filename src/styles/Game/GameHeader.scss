@@ -1,0 +1,22 @@
+.GameHeader {
+  font-size: 1.3em;
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+.GameNumber {
+  color: $yellow-400;
+  text-align: left;
+  flex: 1;
+  .counter {
+    font-weight: bold;
+  }
+}
+.GameTimer {
+  color: $red-600;
+  text-align: right;
+  flex: 1;
+  .clock {
+    font-weight: bold;
+  }
+}

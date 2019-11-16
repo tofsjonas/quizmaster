@@ -1,0 +1,12 @@
+.Game {
+  .RestartButton {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    line-height: 3em;
+    padding: 0 0.6em;
+    border-radius: 0.5em;
+    color: $white;
+    background: $red-500;
+  }
+}

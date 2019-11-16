@@ -1,0 +1,40 @@
+.App {
+  position: relative;
+  text-align: center;
+  background: silver;
+  background-image: linear-gradient(to right, $red-500, $yellow-400);
+  width: 40em;
+  margin: 3em auto;
+  padding: 0.5em 2em 1.5em;
+  border-radius: 0.6em;
+  box-shadow: 10px 10px 5px 0px rgba(50, 50, 50, 0.95);
+}
+h1 {
+  color: $green-300;
+  font: 3.4em 'Audiowide', cursive;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0px 0 rgb(-2, 143, -2), 1px 1px 0 rgb(-10, 135, -10), 2px 2px 0 rgb(-17, 128, -17), 3px 3px 0 rgb(-25, 120, -25), 4px 4px 0 rgb(-32, 113, -32), 5px 5px 0 rgb(-40, 105, -40), 6px 6px 0 rgb(-47, 98, -47), 7px 7px 0 rgb(-55, 90, -55),
+    8px 8px 0 rgb(-62, 83, -62), 9px 9px 0 rgb(-70, 75, -70), 10px 10px 0 rgb(-77, 68, -77), 11px 11px 0 rgb(-85, 60, -85), 12px 12px 0 rgb(-92, 53, -92), 13px 13px 12px rgba(0, 0, 0, 0), 13px 13px 1px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  color: green;
+  font-family: 'Audiowide', cursive;
+}
+
+footer {
+  display: flex;
+  margin: 2em 0 0.5em;
+  * {
+    flex-grow: 1;
+    font-size: 0.9em;
+    color: $green-500;
+  }
+}
+
+.ThinLine {
+  background-image: linear-gradient(to right, $yellow-400, $red-500);
+  height: 1px;
+}
+.button {
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
