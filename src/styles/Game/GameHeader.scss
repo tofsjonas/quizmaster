@@ -3,20 +3,35 @@
   display: flex;
   padding: 1em;
   justify-content: space-between;
+  span {
+    display: inline-block;
+    font-weight: bold;
+    width: 2.5em;
+  }
+  label {
+    display: inline-block;
+  }
 }
 .GameNumber {
   color: $yellow-400;
-  text-align: left;
   flex: 1;
-  .counter {
-    font-weight: bold;
-  }
 }
 .GameTimer {
   color: $red-600;
-  text-align: right;
   flex: 1;
-  .clock {
-    font-weight: bold;
+  span {
+    &.blink {
+      animation: blinker 1s linear infinite;
+    }
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }

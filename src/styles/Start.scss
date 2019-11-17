@@ -1,0 +1,33 @@
+.Start {
+  label {
+    display: inline-block;
+    width: 10em;
+    text-align: right;
+    padding-right: 1em;
+    // background: red;
+  }
+  select {
+    width: 10em;
+  }
+  * {
+    font-size: 1.1em;
+    margin-top: 1em;
+  }
+}
+.StartButton {
+  border-radius: 0.5em;
+  background: $red-300;
+  padding: 1em;
+  margin-top: 3em;
+}
+.CountDown {
+  margin-top: 2em;
+  color: $green-300;
+  font-size: 2em;
+  .counter {
+    font: 3.4em/2.2em 'Audiowide', cursive;
+    letter-spacing: 0.1em;
+    text-shadow: 0px 0px 0 rgb(-2, 143, -2), 1px 1px 0 rgb(-10, 135, -10), 2px 2px 0 rgb(-17, 128, -17), 3px 3px 0 rgb(-25, 120, -25), 4px 4px 0 rgb(-32, 113, -32), 5px 5px 0 rgb(-40, 105, -40), 6px 6px 0 rgb(-47, 98, -47), 7px 7px 0 rgb(-55, 90, -55),
+      8px 8px 0 rgb(-62, 83, -62), 9px 9px 0 rgb(-70, 75, -70), 10px 10px 0 rgb(-77, 68, -77), 11px 11px 0 rgb(-85, 60, -85), 12px 12px 0 rgb(-92, 53, -92), 13px 13px 12px rgba(0, 0, 0, 0), 13px 13px 1px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(0, 0, 0, 0.2);
+  }
+}
