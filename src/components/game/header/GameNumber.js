@@ -7,7 +7,7 @@ const GameNumber = () => {
     <div className="GameNumber">
       <label>Question:</label>
       <span>
-        {current + 1} / {questions.length}
+        {current + 1}/{questions.length}
       </span>
     </div>
   )

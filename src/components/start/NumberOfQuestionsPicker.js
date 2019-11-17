@@ -12,7 +12,6 @@ const NumberOfQuestionsPicker = () => {
     <div className="NumberOfQuestionsPicker">
       <label>Number of Questions:</label>
       <select value={numberOfQuestions} onChange={handleChange}>
-        <option value="2">2</option>
         <option value="5">5</option>
         <option value="10">10</option>
         <option value="15">15</option>

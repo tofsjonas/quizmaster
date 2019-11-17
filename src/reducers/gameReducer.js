@@ -15,7 +15,7 @@ export const gameReducer = (state, action) => {
         plusTen: state.current,
       }
 
-    case 'USE_fiftyFifty':
+    case 'USE_FIFTYFIFTY':
       return { ...state, fiftyFifty: state.current }
     case 'COUNT_DOWN':
       return { ...state, counter: state.counter - 1 }
@@ -44,55 +44,6 @@ export const gameReducer = (state, action) => {
           return question
         }),
       }
-
-    // WAAAAAAY too much repetition...
-    // case 'CORRECT_ANSWER':
-    //   return {
-    //     ...state,
-    //     correct: state.correct + 1,
-    //     current: state.current + 1,
-    //     totalTime: state.totalTime + action.payload.timeElapsed,
-    //     timer: state.timer_interval,
-    //     questions: state.questions.map((question, index) => {
-    //       if (index === state.current) {
-    //         // console.log('SPACETAG: gameReducer.js', question)
-    //         question.stats = action.payload
-    //       }
-    //       return question
-    //     }),
-    //   }
-    // case 'INCORRECT_ANSWER':
-    //   return {
-    //     ...state,
-    //     incorrect: state.incorrect + 1,
-    //     current: state.current + 1,
-    //     timer: state.timer_interval,
-    //     totalTime: state.totalTime + action.payload.timeElapsed,
-    //     questions: state.questions.map((question, index) => {
-    //       if (index === state.current) {
-    //         // console.log('SPACETAG: gameReducer.js', question)
-    //         question.stats = action.payload
-    //       }
-    //       return question
-    //     }),
-    //   }
-    // case 'UNANSWERED_QUESTION':
-    //   return {
-    //     ...state,
-    //     unanswered: state.unanswered + 1,
-    //     current: state.current + 1,
-    //     timer: state.timer_interval,
-    //     totalTime: state.totalTime + action.payload.timeElapsed,
-    //     questions: state.questions.map((question, index) => {
-    //       if (index === state.current) {
-    //         // console.log('SPACETAG: gameReducer.js', question)
-    //         question.stats = action.payload
-    //       }
-    //       return question
-    //     }),
-    //   }
-
-    // return { ...state, current: state.current + 1 }
 
     case 'SET_QUESTIONS':
       return { ...state, questions: action.payload }

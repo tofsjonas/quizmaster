@@ -3,7 +3,7 @@ import { GameContext } from 'contexts/GameContext'
 const FiftyFiftyButton = () => {
   const { fiftyFifty, dispatch } = useContext(GameContext)
   const handleClick = () => {
-    dispatch({ type: 'USE_fiftyFifty' })
+    dispatch({ type: 'USE_FIFTYFIFTY' })
   }
   return (
     <button disabled={fiftyFifty === -1 ? false : true} className="FiftyFiftyButton" onClick={handleClick}>

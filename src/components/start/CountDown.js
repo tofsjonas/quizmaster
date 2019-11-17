@@ -7,7 +7,7 @@ const CountDown = () => {
   useEffect(() => {
     interval.current = setInterval(function() {
       dispatch({ type: 'COUNT_DOWN' })
-    }, 500)
+    }, 300)
     return () => {
       clearInterval(interval.current)
     }

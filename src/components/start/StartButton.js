@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
 import { fetchQuestions } from 'lib/storage'
 import { SettingsContext } from 'contexts/SettingsContext'
+
 const StartButton = () => {
   const { dispatch } = useContext(GameContext)
   const { category, numberOfQuestions } = useContext(SettingsContext)
