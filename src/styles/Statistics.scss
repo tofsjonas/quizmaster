@@ -1,0 +1,23 @@
+.Statistics {
+  .ResetButton {
+    font-size: 1em;
+    line-height: 3em;
+    padding: 0 0.6em;
+    border-radius: 0.5em;
+    color: $white;
+    background: $red-500;
+    margin-top: 2em;
+    width: 60%;
+  }
+  label {
+    display: inline-block;
+    width: 12em;
+    text-align: right;
+    margin-right: 1em;
+  }
+  span {
+    display: inline-block;
+    width: 12em;
+    text-align: left;
+  }
+}

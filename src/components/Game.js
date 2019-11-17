@@ -1,17 +1,18 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import Hr from 'components/Hr'
 import GameHeader from 'components/game/GameHeader'
 import GameMain from 'components/game/GameMain'
 import LifeLines from 'components/game/LifeLines'
-import QuitButton from 'components/game/QuitButton'
+import ResetButton from 'components/ResetButton'
 import { GameContext } from 'contexts/GameContext'
 const Game = () => {
-  const { counter, questions } = useContext(GameContext)
+  const { counter, questions, current } = useContext(GameContext)
   return (
     counter === 0 &&
-    questions.length > 0 && (
+    questions.length > 0 &&
+    questions.length > current && (
       <div className="Game">
-        <QuitButton />
+        <ResetButton text="Quit" />
         <GameHeader />
         <Hr />
         <GameMain />

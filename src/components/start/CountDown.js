@@ -1,24 +1,25 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import { GameContext } from 'contexts/GameContext'
 const CountDown = () => {
-  const { counter, questions, dispatch } = useContext(GameContext)
+  const { counter, dispatch } = useContext(GameContext)
+  var interval = useRef()
 
   useEffect(() => {
-    if (counter === 0) return
-    setTimeout(() => {
+    interval.current = setInterval(function() {
       dispatch({ type: 'COUNT_DOWN' })
-    }, 200)
-  }, [counter])
+    }, 500)
+    return () => {
+      clearInterval(interval.current)
+    }
+  }, [dispatch])
+
   return (
-    counter > 0 &&
-    questions.length === 0 && (
-      <div className="CountDown">
-        {counter === 3 && <div>Ready...</div>}
-        {counter === 2 && <div>Set...</div>}
-        {counter === 1 && <div>Go!</div>}
-        <div className="counter">{counter}</div>
-      </div>
-    )
+    <div className="CountDown">
+      {counter === 3 && <div>Ready...</div>}
+      {counter === 2 && <div>Set...</div>}
+      {counter === 1 && <div>Go!</div>}
+      <div className="counter">{counter}</div>
+    </div>
   )
 }
 export default CountDown

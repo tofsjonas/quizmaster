@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React from 'react'
 import GameTimer from './header/GameTimer'
 import GameNumber from './header/GameNumber'
 const GameHeader = () => {

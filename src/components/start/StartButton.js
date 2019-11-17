@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
 import { fetchQuestions } from 'lib/storage'
 import { SettingsContext } from 'contexts/SettingsContext'
@@ -6,18 +6,16 @@ const StartButton = () => {
   const { dispatch } = useContext(GameContext)
   const { category, numberOfQuestions } = useContext(SettingsContext)
 
-  useEffect(() => {
-    handleClick()
-  }, [])
-
   const handleClick = () => {
     const success = res => {
       dispatch({ type: 'SET_QUESTIONS', payload: res })
     }
     const fail = err => {
+      // TODO error handling...
       console.log('SPACETAG: StartButton.js', err)
     }
 
+    // run in parallell, three seconds should be plenty, unless something goes wrong...
     fetchQuestions({
       category,
       numberOfQuestions,
@@ -25,14 +23,13 @@ const StartButton = () => {
       fail,
     })
 
-    //start countDown
     dispatch({ type: 'START_COUNTDOWN' })
   }
 
   return (
-    <div onClick={handleClick} className="StartButton button">
+    <button onClick={handleClick} className="StartButton button">
       Start Quiz
-    </div>
+    </button>
   )
 }
 export default StartButton

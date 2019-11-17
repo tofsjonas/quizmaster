@@ -1,14 +1,12 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
 const FiftyFiftyButton = () => {
-  const { fifty_fifty, dispatch } = useContext(GameContext)
+  const { fiftyFifty, dispatch } = useContext(GameContext)
   const handleClick = () => {
-    if (fifty_fifty) {
-      dispatch({ type: 'USE_FIFTY_FIFTY' })
-    }
+    dispatch({ type: 'USE_fiftyFifty' })
   }
   return (
-    <button disabled={fifty_fifty ? false : true} className="FiftyFiftyButton" onClick={handleClick}>
+    <button disabled={fiftyFifty === -1 ? false : true} className="FiftyFiftyButton" onClick={handleClick}>
       50/50
     </button>
   )

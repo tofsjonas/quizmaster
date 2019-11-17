@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
 const GameNumber = () => {
   const { current, questions } = useContext(GameContext)
@@ -7,7 +7,7 @@ const GameNumber = () => {
     <div className="GameNumber">
       <label>Question:</label>
       <span>
-        {current} / {questions.length}
+        {current + 1} / {questions.length}
       </span>
     </div>
   )

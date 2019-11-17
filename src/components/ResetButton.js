@@ -1,6 +1,6 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
-const QuitButton = () => {
+const ResetButton = ({ text }) => {
   const { resetGame } = useContext(GameContext)
 
   // confirmation is a bad idea
@@ -11,9 +11,9 @@ const QuitButton = () => {
   // }
 
   return (
-    <button onClick={resetGame} className="QuitButton button">
-      Quit
+    <button onClick={resetGame} className="ResetButton button">
+      {text}
     </button>
   )
 }
-export default QuitButton
+export default ResetButton

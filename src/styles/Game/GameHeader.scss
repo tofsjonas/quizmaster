@@ -21,16 +21,12 @@
   flex: 1;
   span {
     &.blink {
-      animation: blinker 1s linear infinite;
+      animation: blink 1s linear infinite;
     }
   }
 }
 
-.blink_me {
-  animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
+@keyframes blink {
   50% {
     opacity: 0;
   }

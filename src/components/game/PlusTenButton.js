@@ -1,16 +1,14 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
 const PlusTenButton = () => {
-  const { plus_ten, dispatch } = useContext(GameContext)
+  const { plusTen, dispatch } = useContext(GameContext)
   const handleClick = () => {
-    if (plus_ten) {
-      dispatch({ type: 'ADD_TEN_SECONDS' })
-    }
+    dispatch({ type: 'TIMER_plusTen' })
   }
 
   return (
-    <button disabled={plus_ten ? false : true} className="PlusTenButton" onClick={handleClick}>
-      +10 sec
+    <button disabled={plusTen === -1 ? false : true} className="PlusTenButton" onClick={handleClick}>
+      +10 s
     </button>
   )
 }

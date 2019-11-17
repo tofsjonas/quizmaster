@@ -2,13 +2,15 @@
   margin: 1em 0 2em;
 }
 .Question {
-  color: $green-300;
-  font-family: 'Audiowide', cursive;
-  font-size: 1.5em;
-  text-shadow: 0px 0px 0 rgb(-89, 39, -89), 1px 1px 0 rgb(-178, -50, -178), 2px 2px 1px rgba(0, 0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.2);
+  color: $green-500;
+  // font-family: 'Audiowide', cursive;
+  font-size: 1.6em;
+  // font-weight: bold;
+  // text-shadow: 0px 0px 0 rgb(-89, 39, -89), 1px 1px 0 rgb(-178, -50, -178), 2px 2px 1px rgba(0, 0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 .Answers {
   width: 60%;
+  min-width: 20em;
   margin: 0 auto;
 }
 .AnswerButton {

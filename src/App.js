@@ -1,10 +1,8 @@
 import React from 'react'
-import Game from 'components/Game'
-import Start from 'components/Start'
 import SettingsContextProvider from './contexts/SettingsContext'
 import Hr from './components/Hr'
 import GameContextProvider from 'contexts/GameContext'
-import CountDown from './components/start/CountDown'
+import Main from 'Main'
 
 function App() {
   return (
@@ -19,11 +17,7 @@ function App() {
             </h1>
           </header>
           <Hr />
-          <main>
-            <Start />
-            <CountDown />
-            <Game />
-          </main>
+          <Main />
           <Hr />
           <footer>
             <div>

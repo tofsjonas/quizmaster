@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef, useMemo } from 'react'
+import React, { useContext } from 'react'
 import { SettingsContext } from 'contexts/SettingsContext'
 const CategoryPicker = () => {
   const { category, setCategory } = useContext(SettingsContext)
