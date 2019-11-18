@@ -37,11 +37,11 @@ const Statistics = () => {
       </div>
       <div>
         <label>Average time:</label>
-        <span>{average} seconds</span>
+        <span>{average} s</span>
       </div>
       <div>
         <label>Fastest time:</label>
-        <span>{fastestTime} seconds</span>
+        <span>{fastestTime} s</span>
       </div>
       <div>
         <label>LifeLines used:</label>

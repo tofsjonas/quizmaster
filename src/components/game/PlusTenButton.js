@@ -8,7 +8,7 @@ const PlusTenButton = () => {
 
   return (
     <button disabled={plusTen === -1 ? false : true} className="PlusTenButton" onClick={handleClick}>
-      +10 s
+      +10s
     </button>
   )
 }

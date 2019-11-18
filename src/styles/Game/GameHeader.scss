@@ -7,9 +7,18 @@
     display: inline-block;
     font-weight: bold;
     width: 3em;
+    @media (max-width: $max-width-small) {
+      display: block;
+      text-align: center;
+      width: auto;
+    }
   }
   label {
     display: inline-block;
+    @media (max-width: $max-width-small) {
+      display: block;
+      text-align: center;
+    }
   }
 }
 .GameNumber {

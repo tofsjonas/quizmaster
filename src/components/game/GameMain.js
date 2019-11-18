@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect, useRef } from 'react'
 import AnswerButton from './AnswerButton'
 import { GameContext } from 'contexts/GameContext'
 import shuffleArray from 'lib/shuffleArray'
+import ResetButton from 'components/ResetButton'
 const GameMain = () => {
   const { questions, current, timer, dispatch, plusTen, timer_interval } = useContext(GameContext)
   const [question, setQuestion] = useState('')
@@ -53,6 +54,7 @@ const GameMain = () => {
 
   return (
     <div className="GameMain">
+      <ResetButton text="Quit" />
       <div className="Question">{question}</div>
       <div className="Answers">
         {answers.map((answer, index) => {

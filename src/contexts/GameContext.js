@@ -2,8 +2,8 @@ import React, { createContext, useReducer } from 'react'
 import { gameReducer } from 'reducers/gameReducer'
 export const GameContext = createContext()
 
-// easier to change during testing...
-const timer_interval = 30
+// belongs to SettingsContext...
+const timer_interval = 15
 
 // vissa av dessa grejer skulle kanska hamna i statsContext?
 const initialState = {

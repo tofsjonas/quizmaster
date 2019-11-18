@@ -5,6 +5,12 @@
     text-align: right;
     padding-right: 1em;
     // background: red;
+    @media (max-width: $max-width-small) {
+      display: block;
+      text-align: center;
+      width: auto;
+      padding: 0;
+    }
   }
   select {
     width: 10em;
@@ -15,10 +21,14 @@
   }
 }
 .StartButton {
+  font-size: 1em;
+  line-height: 3em;
+  padding: 0 0.6em;
   border-radius: 0.5em;
-  background: $red-300;
-  padding: 1em;
-  margin-top: 3em;
+  color: $white;
+  background: $red-500;
+  margin-top: 2em;
+  width: 60%;
 }
 .CountDown {
   margin-top: 2em;

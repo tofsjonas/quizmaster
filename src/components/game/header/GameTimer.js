@@ -6,7 +6,7 @@ const GameTimer = () => {
   return (
     <div className="GameTimer">
       <label>Time left: </label>
-      <span className={'clock' + (timer <= 10 ? ' blink' : '')}>&nbsp;00:{timer.toString().padStart(2, '0')} </span>
+      <span className={'clock' + (timer <= 5 ? ' blink' : '')}>&nbsp;00:{timer.toString().padStart(2, '0')} </span>
     </div>
   )
 }

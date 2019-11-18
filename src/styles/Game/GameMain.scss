@@ -1,16 +1,29 @@
 .GameMain {
   margin: 1em 0 2em;
+  position: relative;
+  .ResetButton {
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    top: -4em;
+    transform: translate(-50%, 0);
+    line-height: 2em;
+    padding: 0 0.6em;
+    border-radius: 50%;
+    height: 2.8rem;
+    text-align: center;
+    width: 2.8rem;
+    color: $white;
+    background: $red-600;
+  }
 }
 .Question {
   color: $green-500;
-  // font-family: 'Audiowide', cursive;
   font-size: 1.6em;
-  // font-weight: bold;
-  // text-shadow: 0px 0px 0 rgb(-89, 39, -89), 1px 1px 0 rgb(-178, -50, -178), 2px 2px 1px rgba(0, 0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 .Answers {
   width: 60%;
-  min-width: 20em;
+  min-width: 18em;
   margin: 0 auto;
 }
 .AnswerButton {
@@ -20,8 +33,6 @@
   background: $green-400;
   color: $white;
 
-  // font-weight: bold;
-  // display: block;
   margin-top: 2em;
   border-radius: 0.7em;
 }
