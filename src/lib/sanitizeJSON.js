@@ -1,11 +1,10 @@
 //https://stackoverflow.com/questions/5796718/html-entity-decode
-
 const span = document.createElement('span')
 
 function decodeSpecialChars(text) {
   return text.replace(/&[#A-Za-z0-9]+;/gi, (entity, position, text) => {
     span.innerHTML = entity
-    return span.innerText
+    return span.innerHTML
   })
 }
 

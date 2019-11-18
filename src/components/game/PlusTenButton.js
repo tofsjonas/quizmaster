@@ -3,7 +3,7 @@ import { GameContext } from 'contexts/GameContext'
 const PlusTenButton = () => {
   const { plusTen, dispatch } = useContext(GameContext)
   const handleClick = () => {
-    dispatch({ type: 'TIMER_plusTen' })
+    dispatch({ type: 'TIMER_PLUSTEN' })
   }
 
   return (

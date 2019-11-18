@@ -32,7 +32,9 @@ export const fetchQuestions = ({ numberOfQuestions, category, success, fail }) =
     .get(remoteUrl, { crossdomain: true })
     .then(response => {
       if (response.status === 200) {
-        success(sanitizeJSON(response.data.results))
+        if (response.data.results && Array.isArray(response.data.results)) {
+          success(response.data.results)
+        } else fail(new Error('Incorrect response from server'))
       } else fail(new Error('Unknown error'))
     })
     .catch(err => {

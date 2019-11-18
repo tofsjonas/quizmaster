@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { GameContext } from 'contexts/GameContext'
 import { fetchQuestions } from 'lib/storage'
 import { SettingsContext } from 'contexts/SettingsContext'
+import sanitizeJSON from 'lib/sanitizeJSON'
 
 const StartButton = () => {
   const { dispatch } = useContext(GameContext)
@@ -9,7 +10,7 @@ const StartButton = () => {
 
   const handleClick = () => {
     const success = res => {
-      dispatch({ type: 'SET_QUESTIONS', payload: res })
+      dispatch({ type: 'SET_QUESTIONS', payload: sanitizeJSON(res) })
     }
     const fail = err => {
       // TODO error handling...

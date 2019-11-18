@@ -8,7 +8,7 @@ export const gameReducer = (state, action) => {
       return { ...state, timer: state.timer_interval, timeElapsed: 0 }
     case 'TIMER_TICK':
       return { ...state, timer: state.timer - 1, timeElapsed: state.timeElapsed + 1 }
-    case 'TIMER_plusTen':
+    case 'TIMER_PLUSTEN':
       return {
         ...state,
         timer: state.timer + 10,
