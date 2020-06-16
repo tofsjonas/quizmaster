@@ -1,0 +1,38 @@
+.GameMain {
+  margin: 1em 0 2em;
+  position: relative;
+  .ResetButton {
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    top: -4em;
+    transform: translate(-50%, 0);
+    line-height: 2em;
+    padding: 0 0.6em;
+    border-radius: 50%;
+    height: 2.8rem;
+    text-align: center;
+    width: 2.8rem;
+    color: $white;
+    background: $red-600;
+  }
+}
+.Question {
+  color: $green-500;
+  font-size: 1.6em;
+}
+.Answers {
+  width: 60%;
+  min-width: 18em;
+  margin: 0 auto;
+}
+.AnswerButton {
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 2em;
+  background: $green-400;
+  color: $white;
+
+  margin-top: 2em;
+  border-radius: 0.7em;
+}

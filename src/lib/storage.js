@@ -1,5 +1,5 @@
 import axios from 'axios'
-import sanitizeJSON from './sanitizeJSON'
+// import sanitizeJSON from './sanitizeJSON'
 
 export const fetchQuestions = ({ numberOfQuestions, category, success, fail }) => {
   const remoteUrl = 'https://opentdb.com/api.php?amount=' + numberOfQuestions + '&category=' + category + '&type=multiple'

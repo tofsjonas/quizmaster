@@ -1,0 +1,28 @@
+.LifeLines {
+  display: flex;
+  padding: 2em 0;
+}
+.PlusTenButton,
+.FiftyFiftyButton {
+  font-size: 1em;
+  line-height: 3em;
+  padding: 0 0.6em;
+  border-radius: 0.5em;
+  width: 10em;
+  flex: 1;
+}
+.PlusTenButton {
+  background: $yellow-400;
+  color: $black;
+}
+.FiftyFiftyButton {
+  color: $white;
+  background: $red-500;
+}
+.lifeline-title {
+  flex-grow: 1;
+  color: $green-300;
+  margin: 0 0.2em;
+  font: 1.8em 'Audiowide', cursive;
+  text-shadow: 0px 0px 0 rgb(-89, 39, -89), 1px 1px 0 rgb(-178, -50, -178), 2px 2px 1px rgba(0, 0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
